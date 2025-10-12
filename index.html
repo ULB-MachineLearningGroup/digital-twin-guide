@@ -127,7 +127,7 @@
             font-weight: 500;
             color: var(--text-color);
         }
-        
+
         h4 {
             color: var(--accent-color);
             margin-top: 0;
@@ -158,7 +158,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         main {
             margin-top: var(--space-lg);
         }
@@ -181,7 +181,7 @@
             padding: var(--space-lg);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .tool-category:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
@@ -197,6 +197,7 @@
             padding: var(--space-sm) 0;
             border-bottom: 1px solid #eee;
         }
+
         .tool-category li:last-child {
             border-bottom: none;
         }
@@ -230,6 +231,7 @@
             :root {
                 --font-size-xxl: 48px;
             }
+
             header {
                 flex-direction: column;
                 align-items: center;
@@ -258,12 +260,37 @@
                 </ul>
             </nav>
         </header>
-        
+
         <main>
             <section id="about">
                 <h1>Guide for Students</h1>
+
+                <div
+                    style="background: linear-gradient(135deg, #e1f0f5 0%, #d4e9f2 100%); border-left: 4px solid var(--accent-color); border-radius: 12px; padding: var(--space-lg); margin-bottom: var(--space-lg); box-shadow: 0 4px 12px rgba(0, 102, 161, 0.1);">
+                    <p style="margin-bottom: var(--space-md);">
+                        The research topic focuses on developing a cloud-based <b>digital twin</b> architecture for
+                        <b>real-time monitoring</b>, <b>forecasting</b>, and <b>optimization</b> of physical systems.
+                        This
+                        architecture integrates physical simulators with real-world data streams, collects sensor data
+                        from IoT devices, processes large
+                        volumes of time-series data, and performs machine learning pipelines on cloud platforms,
+                        implementing closed-loop control systems for autonomous decision-making.
+                        Applications span diverse domains including <b>renewable energy systems</b> (solar farms, wind
+                        turbines, virtual power plants), <b>smart city infrastructure</b> (traffic flow optimization,
+                        energy grid
+                        management) and <b>robotics</b>.
+                    </p>
+                </div>
+
                 <p>
-                    This website is a reference guide to the tools and technologies for building a cloud-based digital twin supported by a solid MLOps infrastructure. Explore the different categories to discover the essential components for your project. For a concrete example, take a look at the <a href="https://github.com/gmpal/vpp" target="_blank" rel="noopener noreferrer">Virtual Power Plant (VPP)</a> project.
+                    This website is a <b>reference guide</b> to the <b>tools and technologies</b> for building a
+                    cloud-based digital twin supported by a solid MLOps infrastructure. Required knowledge includes
+                    Python programming, core
+                    ML libraries (pandas, numpy, scikit-learn), basic data preprocessing, model training, evaluation
+                    metrics, and Git fundamentals. You're expected to quickly learn Docker, Databases (TimescaleDB),
+                    Cloud Deployment (AWS), MLOps (MLflow), and Streaming (Kafka). For a concrete example, explore the
+                    <a href="https://github.com/gmpal/vpp" target="_blank" rel="noopener noreferrer">Virtual Power Plant
+                        (VPP)</a> project.
                 </p>
             </section>
 
@@ -273,182 +300,244 @@
                     <div class="tool-category">
                         <h4>Container Orchestration & Deployment</h4>
                         <ul>
-                            <li><a href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a></li>
-                            <li><a href="https://docs.docker.com/compose/" target="_blank" rel="noopener noreferrer">Docker Compose</a></li>
-                            <li><a href="https://kubernetes.io/docs/" target="_blank" rel="noopener noreferrer">Kubernetes</a></li>
+                            <li><a href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a>
+                            </li>
+                            <li><a href="https://docs.docker.com/compose/" target="_blank"
+                                    rel="noopener noreferrer">Docker Compose</a></li>
+                            <li><a href="https://kubernetes.io/docs/" target="_blank"
+                                    rel="noopener noreferrer">Kubernetes</a></li>
                         </ul>
                     </div>
                     <div class="tool-category">
                         <h4>Cloud Platforms</h4>
                         <ul>
-                            <li><a href="https://docs.aws.amazon.com/" target="_blank" rel="noopener noreferrer">AWS (Amazon Web Services)</a></li>
-                            <li><a href="https://cloud.google.com/docs" target="_blank" rel="noopener noreferrer">Google Cloud Platform</a></li>
-                            <li><a href="https://docs.microsoft.com/en-us/azure/" target="_blank" rel="noopener noreferrer">Microsoft Azure</a></li>
+                            <li><a href="https://docs.aws.amazon.com/" target="_blank" rel="noopener noreferrer">AWS
+                                    (Amazon Web Services)</a></li>
+                            <li><a href="https://cloud.google.com/docs" target="_blank" rel="noopener noreferrer">Google
+                                    Cloud Platform</a></li>
+                            <li><a href="https://docs.microsoft.com/en-us/azure/" target="_blank"
+                                    rel="noopener noreferrer">Microsoft Azure</a></li>
                         </ul>
                     </div>
                     <div class="tool-category">
                         <h4>Specific AWS Services</h4>
-                         <ul>
-                            <li><a href="https://docs.aws.amazon.com/iot/" target="_blank" rel="noopener noreferrer">AWS IoT Core</a></li>
-                            <li><a href="https://docs.aws.amazon.com/lambda/" target="_blank" rel="noopener noreferrer">AWS Lambda</a></li>
-                            <li><a href="https://docs.aws.amazon.com/ec2/" target="_blank" rel="noopener noreferrer">Amazon EC2</a></li>
-                            <li><a href="https://docs.aws.amazon.com/s3/" target="_blank" rel="noopener noreferrer">Amazon S3</a></li>
+                        <ul>
+                            <li><a href="https://docs.aws.amazon.com/iot/" target="_blank" rel="noopener noreferrer">AWS
+                                    IoT Core</a></li>
+                            <li><a href="https://docs.aws.amazon.com/lambda/" target="_blank"
+                                    rel="noopener noreferrer">AWS Lambda</a></li>
+                            <li><a href="https://docs.aws.amazon.com/ec2/" target="_blank"
+                                    rel="noopener noreferrer">Amazon EC2</a></li>
+                            <li><a href="https://docs.aws.amazon.com/s3/" target="_blank"
+                                    rel="noopener noreferrer">Amazon S3</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
-            
+
             <section id="data">
                 <h2>Data Streaming, Brokers & Databases</h2>
-                 <div class="category-grid">
+                <div class="category-grid">
                     <div class="tool-category">
                         <h4>Real-time Data Processing</h4>
                         <ul>
-                            <li><a href="https://kafka.apache.org/documentation/" target="_blank" rel="noopener noreferrer">Apache Kafka</a></li>
-                            <li><a href="https://pulsar.apache.org/docs/" target="_blank" rel="noopener noreferrer">Apache Pulsar</a></li>
-                            <li><a href="https://redis.io/docs/data-types/streams/" target="_blank" rel="noopener noreferrer">Redis Streams</a></li>
-                            <li><a href="https://storm.apache.org/releases/current/index.html" target="_blank" rel="noopener noreferrer">Apache Storm</a></li>
+                            <li><a href="https://kafka.apache.org/documentation/" target="_blank"
+                                    rel="noopener noreferrer">Apache Kafka</a></li>
+                            <li><a href="https://pulsar.apache.org/docs/" target="_blank"
+                                    rel="noopener noreferrer">Apache Pulsar</a></li>
+                            <li><a href="https://redis.io/docs/data-types/streams/" target="_blank"
+                                    rel="noopener noreferrer">Redis Streams</a></li>
+                            <li><a href="https://storm.apache.org/releases/current/index.html" target="_blank"
+                                    rel="noopener noreferrer">Apache Storm</a></li>
                         </ul>
                     </div>
                     <div class="tool-category">
                         <h4>Message Queues</h4>
                         <ul>
-                            <li><a href="https://www.rabbitmq.com/documentation.html" target="_blank" rel="noopener noreferrer">RabbitMQ</a></li>
-                            <li><a href="https://activemq.apache.org/components/artemis/documentation/" target="_blank" rel="noopener noreferrer">Apache ActiveMQ</a></li>
+                            <li><a href="https://www.rabbitmq.com/documentation.html" target="_blank"
+                                    rel="noopener noreferrer">RabbitMQ</a></li>
+                            <li><a href="https://activemq.apache.org/components/artemis/documentation/" target="_blank"
+                                    rel="noopener noreferrer">Apache ActiveMQ</a></li>
                         </ul>
                     </div>
                     <div class="tool-category">
                         <h4>Databases</h4>
-                         <ul>
-                            <li><a href="https://www.postgresql.org/docs/" target="_blank" rel="noopener noreferrer">PostgreSQL</a></li>
-                            <li><a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer">MySQL</a></li>
-                            <li><a href="https://docs.timescale.com/" target="_blank" rel="noopener noreferrer">TimescaleDB</a></li>
-                            <li><a href="https://docs.influxdata.com/" target="_blank" rel="noopener noreferrer">InfluxDB</a></li>
-                            <li><a href="https://cassandra.apache.org/doc/" target="_blank" rel="noopener noreferrer">Apache Cassandra</a></li>
-                            <li><a href="https://docs.mongodb.com/" target="_blank" rel="noopener noreferrer">MongoDB</a></li>
+                        <ul>
+                            <li><a href="https://www.postgresql.org/docs/" target="_blank"
+                                    rel="noopener noreferrer">PostgreSQL</a></li>
+                            <li><a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer">MySQL</a>
+                            </li>
+                            <li><a href="https://docs.timescale.com/" target="_blank"
+                                    rel="noopener noreferrer">TimescaleDB</a></li>
+                            <li><a href="https://docs.influxdata.com/" target="_blank"
+                                    rel="noopener noreferrer">InfluxDB</a></li>
+                            <li><a href="https://cassandra.apache.org/doc/" target="_blank"
+                                    rel="noopener noreferrer">Apache Cassandra</a></li>
+                            <li><a href="https://docs.mongodb.com/" target="_blank"
+                                    rel="noopener noreferrer">MongoDB</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
-            
+
             <section id="ml">
                 <h2>Machine Learning & MLOps</h2>
                 <div class="category-grid">
                     <div class="tool-category">
                         <h4>ML Frameworks & Libraries</h4>
                         <ul>
-                            <li><a href="https://scikit-learn.org/stable/documentation.html" target="_blank" rel="noopener noreferrer">Scikit-learn</a></li>
-                            <li><a href="https://www.tensorflow.org/api_docs" target="_blank" rel="noopener noreferrer">TensorFlow</a></li>
-                            <li><a href="https://pytorch.org/docs/stable/index.html" target="_blank" rel="noopener noreferrer">PyTorch</a></li>
-                            <li><a href="https://facebook.github.io/prophet/docs/" target="_blank" rel="noopener noreferrer">Prophet (Time Series)</a></li>
-                            <li><a href="https://alkaline-ml.com/pmdarima/" target="_blank" rel="noopener noreferrer">pmdarima (ARIMA)</a></li>
+                            <li><a href="https://scikit-learn.org/stable/documentation.html" target="_blank"
+                                    rel="noopener noreferrer">Scikit-learn</a></li>
+                            <li><a href="https://www.tensorflow.org/api_docs" target="_blank"
+                                    rel="noopener noreferrer">TensorFlow</a></li>
+                            <li><a href="https://pytorch.org/docs/stable/index.html" target="_blank"
+                                    rel="noopener noreferrer">PyTorch</a></li>
+                            <li><a href="https://facebook.github.io/prophet/docs/" target="_blank"
+                                    rel="noopener noreferrer">Prophet (Time Series)</a></li>
+                            <li><a href="https://alkaline-ml.com/pmdarima/" target="_blank"
+                                    rel="noopener noreferrer">pmdarima (ARIMA)</a></li>
                         </ul>
                     </div>
                     <div class="tool-category">
                         <h4>MLOps Platforms</h4>
                         <ul>
-                            <li><a href="https://mlflow.org/docs/latest/index.html" target="_blank" rel="noopener noreferrer">MLflow</a></li>
-                            <li><a href="https://docs.wandb.ai/" target="_blank" rel="noopener noreferrer">Weights & Biases</a></li>
-                            <li><a href="https://www.kubeflow.org/docs/" target="_blank" rel="noopener noreferrer">Kubeflow</a></li>
-                            <li><a href="https://airflow.apache.org/docs/" target="_blank" rel="noopener noreferrer">Apache Airflow</a></li>
+                            <li><a href="https://mlflow.org/docs/latest/index.html" target="_blank"
+                                    rel="noopener noreferrer">MLflow</a></li>
+                            <li><a href="https://docs.wandb.ai/" target="_blank" rel="noopener noreferrer">Weights &
+                                    Biases</a></li>
+                            <li><a href="https://www.kubeflow.org/docs/" target="_blank"
+                                    rel="noopener noreferrer">Kubeflow</a></li>
+                            <li><a href="https://airflow.apache.org/docs/" target="_blank"
+                                    rel="noopener noreferrer">Apache Airflow</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
-            
+
             <section id="dev">
                 <h2>Backend & Frontend Development</h2>
-                 <div class="category-grid">
+                <div class="category-grid">
                     <div class="tool-category">
                         <h4>API Frameworks (Backend)</h4>
                         <ul>
-                            <li><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer">FastAPI (Python)</a></li>
-                            <li><a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener noreferrer">Flask (Python)</a></li>
-                            <li><a href="https://www.django-rest-framework.org/" target="_blank" rel="noopener noreferrer">Django REST Framework</a></li>
-                            <li><a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">Express.js (Node.js)</a></li>
+                            <li><a href="https://fastapi.tiangolo.com/" target="_blank"
+                                    rel="noopener noreferrer">FastAPI (Python)</a></li>
+                            <li><a href="https://flask.palletsprojects.com/" target="_blank"
+                                    rel="noopener noreferrer">Flask (Python)</a></li>
+                            <li><a href="https://www.django-rest-framework.org/" target="_blank"
+                                    rel="noopener noreferrer">Django REST Framework</a></li>
+                            <li><a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">Express.js
+                                    (Node.js)</a></li>
                         </ul>
                     </div>
-                     <div class="tool-category">
+                    <div class="tool-category">
                         <h4>Data Processing</h4>
                         <ul>
-                            <li><a href="https://pandas.pydata.org/docs/" target="_blank" rel="noopener noreferrer">Pandas</a></li>
-                            <li><a href="https://numpy.org/doc/" target="_blank" rel="noopener noreferrer">NumPy</a></li>
-                            <li><a href="https://spark.apache.org/docs/latest/" target="_blank" rel="noopener noreferrer">Apache Spark</a></li>
+                            <li><a href="https://pandas.pydata.org/docs/" target="_blank"
+                                    rel="noopener noreferrer">Pandas</a></li>
+                            <li><a href="https://numpy.org/doc/" target="_blank" rel="noopener noreferrer">NumPy</a>
+                            </li>
+                            <li><a href="https://spark.apache.org/docs/latest/" target="_blank"
+                                    rel="noopener noreferrer">Apache Spark</a></li>
                         </ul>
                     </div>
                     <div class="tool-category">
                         <h4>Web Frameworks (Frontend)</h4>
                         <ul>
-                           <li><a href="https://reactjs.org/docs/" target="_blank" rel="noopener noreferrer">React</a></li>
-                           <li><a href="https://vuejs.org/guide/" target="_blank" rel="noopener noreferrer">Vue.js</a></li>
-                           <li><a href="https://angular.io/docs" target="_blank" rel="noopener noreferrer">Angular</a></li>
-                           <li><a href="https://www.chartjs.org/docs/latest/" target="_blank" rel="noopener noreferrer">Chart.js</a></li>
+                            <li><a href="https://reactjs.org/docs/" target="_blank" rel="noopener noreferrer">React</a>
+                            </li>
+                            <li><a href="https://vuejs.org/guide/" target="_blank" rel="noopener noreferrer">Vue.js</a>
+                            </li>
+                            <li><a href="https://angular.io/docs" target="_blank" rel="noopener noreferrer">Angular</a>
+                            </li>
+                            <li><a href="https://www.chartjs.org/docs/latest/" target="_blank"
+                                    rel="noopener noreferrer">Chart.js</a></li>
                             <li><a href="https://d3js.org/" target="_blank" rel="noopener noreferrer">D3.js</a></li>
-                            <li><a href="https://plotly.com/javascript/" target="_blank" rel="noopener noreferrer">Plotly</a></li>
-                            <li><a href="https://recharts.org/en-US/" target="_blank" rel="noopener noreferrer">Recharts</a></li>
+                            <li><a href="https://plotly.com/javascript/" target="_blank"
+                                    rel="noopener noreferrer">Plotly</a></li>
+                            <li><a href="https://recharts.org/en-US/" target="_blank"
+                                    rel="noopener noreferrer">Recharts</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
-            
+
             <section id="iot">
                 <h2>IoT & Hardware Integration</h2>
-                 <div class="category-grid">
+                <div class="category-grid">
                     <div class="tool-category">
                         <h4>Microcontrollers & SBCs</h4>
                         <ul>
-                            <li><a href="https://www.raspberrypi.org/documentation/" target="_blank" rel="noopener noreferrer">Raspberry Pi</a></li>
-                            <li><a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/" target="_blank" rel="noopener noreferrer">ESP32</a></li>
-                            <li><a href="https://docs.arduino.cc/" target="_blank" rel="noopener noreferrer">Arduino</a></li>
+                            <li><a href="https://www.raspberrypi.org/documentation/" target="_blank"
+                                    rel="noopener noreferrer">Raspberry Pi</a></li>
+                            <li><a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/" target="_blank"
+                                    rel="noopener noreferrer">ESP32</a></li>
+                            <li><a href="https://docs.arduino.cc/" target="_blank" rel="noopener noreferrer">Arduino</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="tool-category">
                         <h4>IoT Communication Protocols</h4>
                         <ul>
-                            <li><a href="https://mqtt.org/mqtt-specification/" target="_blank" rel="noopener noreferrer">MQTT</a></li>
-                            <li><a href="https://tools.ietf.org/html/rfc7252" target="_blank" rel="noopener noreferrer">CoAP</a></li>
-                            <li><a href="https://lora-alliance.org/resource_hub/lorawan-specification-v1-0-3/" target="_blank" rel="noopener noreferrer">LoRaWAN</a></li>
+                            <li><a href="https://mqtt.org/mqtt-specification/" target="_blank"
+                                    rel="noopener noreferrer">MQTT</a></li>
+                            <li><a href="https://tools.ietf.org/html/rfc7252" target="_blank"
+                                    rel="noopener noreferrer">CoAP</a></li>
+                            <li><a href="https://lora-alliance.org/resource_hub/lorawan-specification-v1-0-3/"
+                                    target="_blank" rel="noopener noreferrer">LoRaWAN</a></li>
                         </ul>
                     </div>
                     <div class="tool-category">
                         <h4>IoT Libraries (Python)</h4>
-                         <ul>
-                            <li><a href="https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php" target="_blank" rel="noopener noreferrer">Paho MQTT</a></li>
-                            <li><a href="https://pypi.org/project/RPi.GPIO/" target="_blank" rel="noopener noreferrer">RPi.GPIO</a></li>
-                            <li><a href="https://docs.circuitpython.org/" target="_blank" rel="noopener noreferrer">CircuitPython</a></li>
+                        <ul>
+                            <li><a href="https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php"
+                                    target="_blank" rel="noopener noreferrer">Paho MQTT</a></li>
+                            <li><a href="https://pypi.org/project/RPi.GPIO/" target="_blank"
+                                    rel="noopener noreferrer">RPi.GPIO</a></li>
+                            <li><a href="https://docs.circuitpython.org/" target="_blank"
+                                    rel="noopener noreferrer">CircuitPython</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
-            
+
             <section id="sim">
                 <h2>Simulation, Optimization & Monitoring</h2>
                 <div class="category-grid">
                     <div class="tool-category">
                         <h4>Optimization & Programming</h4>
                         <ul>
-                            <li><a href="https://coin-or.github.io/pulp/" target="_blank" rel="noopener noreferrer">PuLP (Python)</a></li>
-                            <li><a href="https://www.cvxpy.org/" target="_blank" rel="noopener noreferrer">CVXPY</a></li>
-                            <li><a href="https://developers.google.com/optimization" target="_blank" rel="noopener noreferrer">OR-Tools (Google)</a></li>
+                            <li><a href="https://coin-or.github.io/pulp/" target="_blank" rel="noopener noreferrer">PuLP
+                                    (Python)</a></li>
+                            <li><a href="https://www.cvxpy.org/" target="_blank" rel="noopener noreferrer">CVXPY</a>
+                            </li>
+                            <li><a href="https://developers.google.com/optimization" target="_blank"
+                                    rel="noopener noreferrer">OR-Tools (Google)</a></li>
                         </ul>
                     </div>
                     <div class="tool-category">
                         <h4>Energy & Physical System Simulation</h4>
                         <ul>
-                           <li><a href="https://pvlib-python.readthedocs.io/" target="_blank" rel="noopener noreferrer">pvlib (Solar)</a></li>
-                           <li><a href="https://windpowerlib.readthedocs.io/" target="_blank" rel="noopener noreferrer">windpowerlib (Wind)</a></li>
-                           <li><a href="https://openmodelica.org/" target="_blank" rel="noopener noreferrer">OpenModelica</a></li>
+                            <li><a href="https://pvlib-python.readthedocs.io/" target="_blank"
+                                    rel="noopener noreferrer">pvlib (Solar)</a></li>
+                            <li><a href="https://windpowerlib.readthedocs.io/" target="_blank"
+                                    rel="noopener noreferrer">windpowerlib (Wind)</a></li>
+                            <li><a href="https://openmodelica.org/" target="_blank"
+                                    rel="noopener noreferrer">OpenModelica</a></li>
                         </ul>
                     </div>
                     <div class="tool-category">
                         <h4>Monitoring & Observability</h4>
                         <ul>
-                            <li><a href="https://prometheus.io/docs/" target="_blank" rel="noopener noreferrer">Prometheus</a></li>
-                            <li><a href="https://grafana.com/docs/" target="_blank" rel="noopener noreferrer">Grafana</a></li>
-                            <li><a href="https://www.elastic.co/guide/" target="_blank" rel="noopener noreferrer">ELK Stack</a></li>
+                            <li><a href="https://prometheus.io/docs/" target="_blank"
+                                    rel="noopener noreferrer">Prometheus</a></li>
+                            <li><a href="https://grafana.com/docs/" target="_blank"
+                                    rel="noopener noreferrer">Grafana</a></li>
+                            <li><a href="https://www.elastic.co/guide/" target="_blank" rel="noopener noreferrer">ELK
+                                    Stack</a></li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -458,12 +547,16 @@
                     <div class="tool-category">
                         <h4>3D Visualization & DT Platforms</h4>
                         <ul>
-                            <li><a href="https://docs.unity3d.com/" target="_blank" rel="noopener noreferrer">Unity3D</a></li>
-                            <li><a href="https://threejs.org/docs/" target="_blank" rel="noopener noreferrer">Three.js</a></li>
-                            <li><a href="https://docs.microsoft.com/en-us/azure/digital-twins/" target="_blank" rel="noopener noreferrer">Azure Digital Twins</a></li>
-                            <li><a href="https://docs.aws.amazon.com/iot-twinmaker/" target="_blank" rel="noopener noreferrer">AWS IoT TwinMaker</a></li>
+                            <li><a href="https://docs.unity3d.com/" target="_blank"
+                                    rel="noopener noreferrer">Unity3D</a></li>
+                            <li><a href="https://threejs.org/docs/" target="_blank"
+                                    rel="noopener noreferrer">Three.js</a></li>
+                            <li><a href="https://docs.microsoft.com/en-us/azure/digital-twins/" target="_blank"
+                                    rel="noopener noreferrer">Azure Digital Twins</a></li>
+                            <li><a href="https://docs.aws.amazon.com/iot-twinmaker/" target="_blank"
+                                    rel="noopener noreferrer">AWS IoT TwinMaker</a></li>
                         </ul>
-                    </div>                    
+                    </div>
                 </div>
             </section>
 
@@ -492,7 +585,7 @@
             </p>
         </footer>
     </div>
-    
+
     <script>
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
